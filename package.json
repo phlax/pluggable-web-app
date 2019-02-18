@@ -1,0 +1,30 @@
+{
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "cross-env": "^5.2.0",
+        "@babel/plugin-transform-react-jsx": "^7.3.0",
+        "@babel/preset-env": "^7.3.1",
+        "@babel/core": "^7.3.3",
+        "@babel/plugin-proposal-class-properties": "^7.3.3"
+    },
+    "version": "0.0.30",
+    "author": "phlax",
+    "main": "js/index.js",
+    "scripts": {
+        "start": "node scripts/start.js",
+        "build": "cross-env NODE_ENV=production babel js -d dist --ignore 'src/**/*.test.js' --copy-files",
+        "test": "node scripts/test.js"
+    },
+    "peerDependencies": {
+        "@pluggable/app": "latest"
+    },
+    "name": "@pluggable/web-app",
+    "license": "GPL-3.0-or-later",
+    "description": "UI for pluggable app",
+    "dependencies": {
+        "history": "^4.7.2"
+    },
+    "files": [
+        "js"
+    ]
+}
